@@ -5,7 +5,8 @@
     <%= stylesheet_link_tag 'application', media: 'all' %>
     <%= csrf_meta_tags %>
   </head>
-  <body>
+  <body> 
+  <h1>I'm a wrapper</h1>
     <% flash.each do |name, msg| -%>
       <%= content_tag :div, msg, class: name %>
     <% end -%>
